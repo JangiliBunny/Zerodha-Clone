@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import GeneralContext from "./GeneralContext";
 import { watchlist } from "../data/data";
 
-import "./WatchList.css";
+import "./watchList.css";
 
 import Tooltip from "@mui/material/Tooltip";
 import Grow from "@mui/material/Grow";
