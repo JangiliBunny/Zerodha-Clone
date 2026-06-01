@@ -1,0 +1,94 @@
+.watchlist-container {
+  width: 320px !important;
+  min-width: 320px;
+  flex-shrink: 0;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  border-right: 1px solid #eee;
+  box-sizing: border-box;
+}
+
+.list {
+  overflow: visible;
+}
+
+.watchlist-item {
+  position: relative;
+  padding: 10px;
+}
+
+.watchlist-item:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.actions {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+.watchlist-item:hover .actions {
+  opacity: 1;
+}
+
+.watchlist-item {
+  position: relative;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.watchlist-item:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Actions container */
+.actions {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Show on hover */
+.watchlist-item:hover .actions {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(-50%) translateX(-4px);
+}
+
+/* Buttons */
+.actions button {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+}
+
+.buy {
+  background: #4184f3;
+  color: #fff;
+}
+
+.sell {
+  background: #ff5722;
+  color: #fff;
+}
+
+.action {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.action:hover {
+  background: #e0e0e0;
+}
+
+
