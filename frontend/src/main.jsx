@@ -11,7 +11,7 @@ import SupportPage from './landing_page/support/SupportPage'
 import Navbar from './landing_page/Navbar'
 import Footer from './landing_page/Footer'
 import NotFound from './landing_page/NotFound'
-import Login from './landing_page/login/Login'
+import Login from './landing_page/login/login'
 import { Home } from './landing_page'
 
 
