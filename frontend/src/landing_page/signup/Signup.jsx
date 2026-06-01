@@ -33,9 +33,6 @@ const SignUp = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    //  alert("Submit Clicked");
-    // console.log(inputValue);
-    console.log("SIGNUP API HIT");
     try {
       const { data } = await axios.post(
         "http://localhost:3002/signup",
@@ -54,8 +51,6 @@ const SignUp = () => {
       } else {
         handleError(message);
       }
-      alert("Response Received");
-       console.log(data);
     } catch (error) {
       console.log(error);
     }
