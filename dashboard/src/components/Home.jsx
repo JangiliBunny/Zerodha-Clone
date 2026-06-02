@@ -80,13 +80,15 @@ const Home = () => {
         );
 
         if (!data.status) {
-          window.location.href = "http://localhost:5173/login";
+          window.location.href = "https://zerodha-clone-zikd.vercel.app/login";
+          //window.location.href = "/";
           return;
         }
 
         setLoading(false);
       } catch (err) {
-        window.location.href = "http://localhost:5173/login";
+        window.location.href = "https://zerodha-clone-zikd.vercel.app/login";
+        //window.location.href = "/";
       }
     };
 

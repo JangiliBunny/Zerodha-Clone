@@ -29,7 +29,7 @@ const Menu = () => {
       { withCredentials: true }
     );
 
-    window.location.href = "http://localhost:5173/login";
+    window.location.href = "https://zerodha-clone-zikd.vercel.app/login";
   } catch (error) {
     console.log(error);
   }
