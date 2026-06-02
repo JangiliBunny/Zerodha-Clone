@@ -27,6 +27,7 @@ app.use(
       "http://localhost:5174",
       "https://zerodha-clone-zikd.vercel.app",
       "https://zerodha-clone-zikd-i3uk2dq7l-jangilibunnys-projects.vercel.app",
+      "https://zerodha-clone-xi-gold.vercel.app",
     ],
     credentials: true,
   })
