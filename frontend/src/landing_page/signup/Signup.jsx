@@ -35,7 +35,7 @@ const SignUp = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/signup",
+        "https://zerodha-clone-production-cf2a.up.railway.app/signup",
         {
           ...inputValue,
         },

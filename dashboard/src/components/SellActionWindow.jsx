@@ -11,7 +11,7 @@ const SellActionWindow = ({ uid }) => {
 
   const handleSell = async () => {
     setLoading(true);
-    await axios.post("http://localhost:3002/newOrder", {
+    await axios.post("https://zerodha-clone-production-cf2a.up.railway.app/newOrder", {
       name: uid,
       qty,
       price,

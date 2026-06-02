@@ -24,7 +24,7 @@ const Menu = () => {
   const handleLogout = async () => {
   try {
     await axios.post(
-      "http://localhost:3002/logout",
+      "https://zerodha-clone-production-cf2a.up.railway.app/logout",
       {},
       { withCredentials: true }
     );

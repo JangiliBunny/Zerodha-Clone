@@ -27,7 +27,7 @@ const Orders = () => {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/allorders")
+    axios.get("https://zerodha-clone-production-cf2a.up.railway.app/allorders")
       .then((res) => {
         setOrders(res.data);
       })
