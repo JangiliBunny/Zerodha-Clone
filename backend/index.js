@@ -10,11 +10,23 @@ app.use(express.json());
 
 const cookieParser = require("cookie-parser");
 //app.use(cors());
+// app.use(
+//   cors({
+//     origin: [
+//       "https://zerodha-clone-zikd.vercel.app",
+//       "zerodha-clone-xi-gold.vercel.app",
+//     ],
+//     credentials: true,
+//   })
+// );
+
 app.use(
   cors({
     origin: [
+      "http://localhost:5173",
+      "http://localhost:5174",
       "https://zerodha-clone-zikd.vercel.app",
-      "zerodha-clone-xi-gold.vercel.app",
+      "https://zerodha-clone-zikd-i3uk2dq7l-jangilibunnys-projects.vercel.app",
     ],
     credentials: true,
   })
