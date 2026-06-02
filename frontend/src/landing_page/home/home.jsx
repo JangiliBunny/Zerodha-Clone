@@ -14,7 +14,7 @@ const Home = () => {
         navigate("/login");
       }
       const { data } = await axios.post(
-        "http://localhost:3002",
+        "https://zerodha-clone-production-cf2a.up.railway.app",
         {},
         { withCredentials: true }
       );
