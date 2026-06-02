@@ -42,7 +42,7 @@ const Login = () => {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          window.location.href = "https://zerodha-clone-zikd.vercel.app/";
+          window.location.href = "https://zerodha-clone-zikd.vercel.app/home";
         }, 1000);
       } else {
         handleError(message);
