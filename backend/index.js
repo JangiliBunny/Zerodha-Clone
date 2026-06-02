@@ -202,6 +202,10 @@ const Mongourl=process.env.MONGO_URL;
 
 // });
 
+app.get("/", (req, res) => {
+  res.send("Backend is running");
+});
+
 app.use("/", authRoute);
 
 app.get("/allholdings", async(req, res)=>{
